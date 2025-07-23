@@ -1,0 +1,220 @@
+.analysis-results {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+  
+  .results-header {
+    padding: 2rem;
+    border-bottom: 1px solid #e5e7eb;
+    background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  }
+  
+  .results-title h2 {
+    color: #1e293b;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .results-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .job-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .job-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #3b82f6;
+  }
+  
+  .company-name {
+    color: #6b7280;
+    font-size: 1rem;
+  }
+  
+  .analysis-meta {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+    color: #6b7280;
+  }
+  
+  .results-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .new-analysis-btn,
+  .save-results-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .new-analysis-btn {
+    background: #10b981;
+    color: white;
+  }
+  
+  .new-analysis-btn:hover {
+    background: #059669;
+    transform: translateY(-1px);
+  }
+  
+  .save-results-btn {
+    background: #f59e0b;
+    color: white;
+  }
+  
+  .save-results-btn:hover {
+    background: #d97706;
+    transform: translateY(-1px);
+  }
+  
+  .results-tabs {
+    display: flex;
+    border-bottom: 1px solid #e5e7eb;
+    background: #f8fafc;
+  }
+  
+  .tab {
+    flex: 1;
+    padding: 1rem 2rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.2s;
+    color: #6b7280;
+    font-weight: 500;
+  }
+  
+  .tab:hover {
+    background: #f1f5f9;
+    color: #374151;
+  }
+  
+  .tab.active {
+    background: white;
+    color: #3b82f6;
+    border-bottom: 3px solid #3b82f6;
+    font-weight: 600;
+  }
+  
+  .tab-icon {
+    font-size: 1.2rem;
+  }
+  
+  .tab-label {
+    font-size: 1rem;
+  }
+  
+  .results-content {
+    padding: 2rem;
+  }
+  
+  .results-footer {
+    border-top: 1px solid #e5e7eb;
+    padding: 1.5rem 2rem;
+    background: #f8fafc;
+  }
+  
+  .analysis-info {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+  
+  .info-item {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .info-label {
+    color: #6b7280;
+    font-weight: 500;
+  }
+  
+  .info-value {
+    color: #374151;
+    font-weight: 600;
+  }
+  
+  .upgrade-prompt {
+    background: linear-gradient(135deg, #fef3c7, #fde68a);
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #f59e0b;
+    text-align: center;
+  }
+  
+  .upgrade-prompt p {
+    margin: 0;
+    color: #92400e;
+  }
+  
+  .upgrade-link {
+    color: #d97706;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 0.5rem;
+  }
+  
+  .upgrade-link:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .results-header {
+      padding: 1.5rem;
+    }
+    
+    .results-title h2 {
+      font-size: 1.5rem;
+    }
+    
+    .results-actions {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    .tab {
+      padding: 0.75rem 1rem;
+      font-size: 0.9rem;
+    }
+    
+    .results-content {
+      padding: 1.5rem;
+    }
+    
+    .analysis-info {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }

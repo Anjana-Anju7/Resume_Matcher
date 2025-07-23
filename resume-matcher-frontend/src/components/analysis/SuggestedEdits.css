@@ -1,0 +1,339 @@
+.suggested-edits {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .suggestions-header {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .suggestions-header h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #1e293b;
+    font-size: 1.8rem;
+  }
+  
+  .header-icon {
+    font-size: 2rem;
+  }
+  
+  .suggestions-header p {
+    color: #6b7280;
+    font-size: 1.1rem;
+  }
+  
+  .suggestions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .suggestion-item {
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s;
+    background: white;
+  }
+  
+  .suggestion-item:hover {
+    border-color: #3b82f6;
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.1);
+  }
+  
+  .suggestion-header {
+    padding: 1.25rem;
+    background: #f8fafc;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .suggestion-header:hover {
+    background: #f1f5f9;
+  }
+  
+  .suggestion-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .section-badge {
+    background: #3b82f6;
+    color: white;
+    padding: 0.375rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    flex-shrink: 0;
+  }
+  
+  .suggestion-preview {
+    color: #6b7280;
+    font-size: 0.9rem;
+    flex: 1;
+    margin-left: 1rem;
+  }
+  
+  .expand-icon {
+    font-size: 1.2rem;
+    color: #9ca3af;
+    transition: transform 0.2s;
+  }
+  
+  .suggestion-content {
+    padding: 2rem;
+    background: white;
+  }
+  
+  .suggestion-comparison {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    align-items: start;
+  }
+  
+  .version-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .version-container h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: #374151;
+    font-size: 1.1rem;
+  }
+  
+  .version-icon {
+    margin-right: 0.5rem;
+  }
+  
+  .text-content {
+    padding: 1.25rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    border: 2px solid;
+    position: relative;
+  }
+  
+  .text-content.current {
+    background: #fef2f2;
+    border-color: #fecaca;
+    color: #991b1b;
+  }
+  
+  .text-content.suggested {
+    background: #f0fdf4;
+    border-color: #bbf7d0;
+    color: #166534;
+  }
+  
+  .arrow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+  }
+  
+  .improvement-arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    color: #10b981;
+    font-weight: 600;
+  }
+  
+  .arrow-icon {
+    font-size: 1.5rem;
+  }
+  
+  .arrow-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .copy-btn {
+    background: #e5e7eb;
+    border: none;
+    padding: 0.375rem 0.75rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  
+  .copy-btn:hover {
+    background: #d1d5db;
+    transform: translateY(-1px);
+  }
+  
+  .copy-btn.copied {
+    background: #10b981;
+    color: white;
+  }
+  
+  .suggestion-benefits {
+    background: #fffbeb;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #fed7aa;
+  }
+  
+  .suggestion-benefits h5 {
+    margin-bottom: 1rem;
+    color: #92400e;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .benefits-icon {
+    font-size: 1.2rem;
+  }
+  
+  .benefits-list {
+    margin: 0;
+    padding-left: 1.5rem;
+    color: #78350f;
+  }
+  
+  .benefits-list li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+  }
+  
+  .suggestions-footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid #e5e7eb;
+  }
+  
+  .implementation-tips {
+    background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #bae6fd;
+  }
+  
+  .implementation-tips h4 {
+    margin-bottom: 1.5rem;
+    color: #0c4a6e;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .tips-icon {
+    font-size: 1.4rem;
+  }
+  
+  .tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .tip-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .tip-icon {
+    font-size: 1.1rem;
+    color: #0369a1;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+  }
+  
+  .tip-item span:last-child {
+    color: #374151;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  .no-suggestions {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+    border-radius: 12px;
+    border: 2px dashed #cbd5e1;
+  }
+  
+  .no-suggestions-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .no-suggestions h3 {
+    color: #1e293b;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .no-suggestions p {
+    color: #64748b;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .suggestion-comparison {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    
+    .arrow-container {
+      padding: 0;
+      order: 2;
+    }
+    
+    .improvement-arrow {
+      flex-direction: row;
+    }
+    
+    .arrow-icon {
+      transform: rotate(90deg);
+    }
+    
+    .tips-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .suggestion-title {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+    
+    .suggestion-preview {
+      margin-left: 0;
+      margin-top: 0.5rem;
+    }
+  }
